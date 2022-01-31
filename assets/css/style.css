@@ -1,0 +1,113 @@
+@import url('base.css');
+@import url('fontello.css');
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Gilroy-Bold';
+}
+
+h2 {
+	font-size: 34px;
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
+	line-height: 22px;
+}
+
+
+#wrapper {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.skills {
+	content-visibility: auto;
+	text-align: center;
+	padding-bottom: 111px;
+}
+
+.skills h2 {
+	margin-top: 91px;
+}
+
+.skills p {
+	font-family: 'Gilroy-Medium';
+}
+
+.skills > p {
+	margin-top: 70px;
+}
+
+.skills_block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.skills_block > div {
+	margin-top: 83px;
+}
+
+.skills_block p {
+	margin-top: 25px;
+	color: var(--secondary-color);
+}
+
+.btn_star {
+	display: inline-block;
+	font-family: 'fontello';
+	border: 0;
+	text-decoration: none;
+	background-color: var(--background-firstly-color);
+	color: #E5E5E5;
+}
+
+.btn_star:not(.figma_skills_block > .assessment > .btn_star) {
+	margin-top: 41px;
+}
+
+.figma_skills_block > .assessment > .btn_star {
+	margin-top: 59px;
+}
+
+.btn_star:hover {
+	cursor: pointer;
+	color: #6FA0A0;
+}
+
+.btn_star:before {
+	display: block;
+	font-size: 26px;
+	content: '\e801';
+}
+
+.btn_active_star {
+	color: #000;
+}
+
+footer {
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 123px;
+}
+
+footer p {
+	font-size: 14px;
+	color: var(--secondary-color);
+}
+
+@media screen and (max-width: 700px) {
+	#wrapper {
+		margin-left: 14px;
+		margin-right: 14px;
+	}
+
+	.skills_block {
+		justify-content: center;
+		flex-direction: column;
+	}
+}
